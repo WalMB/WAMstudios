@@ -1,90 +1,80 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  color: #222;
-  direction: rtl;
-  text-align: right;
-}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAM Studios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
+  <header>
+    <div class="container">
+      <h1>WAM Studios</h1>
+      <p>استوديو تسجيل احترافي - معدات عالية الجودة - بيئة إبداعية</p>
+      <a href="#contact" class="btn">احجز جلسة</a>
+    </div>
+  </header>
 
-header {
-  background: #111;
-  color: white;
-  padding: 60px 0;
-  text-align: center;
-}
+  <main class="container">
 
-header .btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 24px;
-  background: #ff6600;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-}
+    <section class="about">
+      <h2>عن الشركة</h2>
+      <p>
+        WAM Studios يوفر خدمات تسجيل صوتي احترافية، مونتاج، وإنتاج.
+        نقدم معدات متطورة وبيئة مناسبة للمبدعين والفنانين لإنتاج أعمال بجودة عالية.
+      </p>
+    </section>
 
-section {
-  margin: 40px 0;
-}
+    <section class="services">
+      <h2>الخدمات</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>التسجيل الصوتي</h3>
+          <p>تسجيل صوت بجودة احترافية باستخدام أحدث المعدات.</p>
+        </div>
+        <div class="card">
+          <h3>المونتاج</h3>
+          <p>تحرير الصوت وإنتاج ما بعد التسجيل بجودة عالية.</p>
+        </div>
+        <div class="card">
+          <h3>إنتاج الفيديو</h3>
+          <p>تصوير وإنتاج فيديو احترافي بجودة سينمائية.</p>
+        </div>
+        <div class="card">
+          <h3>الاستوديو</h3>
+          <p>بيئة مريحة ومناسبة للعمل الإبداعي والتسجيل.</p>
+        </div>
+      </div>
+    </section>
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-}
+    <section class="gallery">
+      <h2>معرض الصور</h2>
+      <div class="images">
+        <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=800&q=80" alt="استوديو">
+        <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80" alt="ميكروفون">
+        <img src="https://images.unsplash.com/photo-1587202372775-06bda1b1db7b?auto=format&fit=crop&w=800&q=80" alt="معدات صوتية">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80" alt="تسجيل">
+      </div>
+    </section>
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
+    <section id="contact" class="contact">
+      <h2>تواصل معنا</h2>
+      <p>رقم الهاتف: <strong>01000666009</strong></p>
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 10px;
-}
+      <form>
+        <input type="text" placeholder="اسمك" required>
+        <input type="email" placeholder="بريدك الإلكتروني" required>
+        <textarea placeholder="رسالتك" required></textarea>
+        <button type="submit">إرسال</button>
+      </form>
+    </section>
 
-.gallery img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 6px;
-}
+  </main>
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 500px;
-}
+  <footer>
+    <p>© WAM Studios - جميع الحقوق محفوظة</p>
+  </footer>
 
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.contact-form button {
-  background: #111;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #111;
-  color: white;
-}
+</body>
+</html>
